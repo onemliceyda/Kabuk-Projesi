@@ -3,9 +3,8 @@ Batch modda aldığımız txt dosyasını satır satır okuyarak bu satırları 
 karakteri ile ayırıp ardından boşluk ve diğer ayırıcı karakterler ile parametrelerine ayırdık.
 Ardından bu argümanları execvp fonksiyonuna vermesi için yazdığımız fonksiyonlara yolladık. Çeşitli hata 
 kontrollerini(512 karakter kontrolü , argüman hatası , bellek tahsis hataları vb.) ve şartları gerçekleştirdik.
-
-    İnteraktif mod içerisinde ise sonsuz bir döngü içerisinde kullanıcıdan bir girdi istedik.Ardından batch 
-modda satır satır yaptığımız işlemi interaktif modda girdi girdi yaptık. Paralel çalışmayı fork , wait ve 
+İnteraktif mod içerisinde ise sonsuz bir döngü içerisinde kullanıcıdan bir girdi istedik. 
+Ardından batch modda satır satır yaptığımız işlemi interaktif modda girdi girdi yaptık. Paralel çalışmayı fork , wait ve 
 waitpid komutlarıyla sağladık. Yazdığımız kodda child prosesslerin execvp komutu ile girdiden aldığı 
 komutları çalıştırmasını sağladık parent prosess ilede bir sonraki komuta döndük.
 
